@@ -1,0 +1,10 @@
+(function(__FILE__){this.define_class(this.n,"OpalFoo",function(){this.dm("initialize",function(env){if (env == undefined) {  env = this.Y("development");}this.is("@env",env);
+return this.const_get('Document')['$ready?'](this.P(function(){this.$puts(["Running ",this.$class().$to_s()," at ",this.ig('@env').$to_s()].join(''));
+return this.$ready();
+}));
+},false, 2);
+return this.dm("ready",function(){return this.const_get('Document')['$[]']("body").$first()['$html=']("<div style='color:red;'>OpalFoo is really running!</div>");
+},false, 10);
+},0);
+return this.const_get('OpalFoo').$new();
+}).apply(opal.top_self);
